@@ -16,17 +16,20 @@
 4.  **Audit:** Final quality check before any code is committed.
 
 ---
+
 *Developed for the Stewardship AI Ecosystem.*
-.
-├── README.md                 # Public project overview & branding
-├── LICENSE                   # Apache 2.0 (Recommended for AI frameworks)
-├── AGENTS.md                 # The Behavioral Playbook for Gemini 3 Pro
-├── AUDIT_PROTOCOL.md         # The "Judge's" Rules for quality gates
-├── RESEARCH_MANIFEST.md      # Protocol for Deep Research triggers
-├── .agent/
-│   ├── spec/
-│   │   ├── requirement.md    # User's raw intent & goal mapping
-│   │   └── design.md         # The "Architect" layer's technical design
-│   └── tasks.md              # Recursive parent-child task tracking
-└── scripts/
+
+    ├── README.md                 # Public project overview & branding
+    ├── LICENSE                   # Apache 2.0 (Recommended for AI frameworks)
+    ├── AGENTS.md                 # The Behavioral Playbook for Gemini 3 Pro
+    ├── AUDIT_PROTOCOL.md         # The "Judge's" Rules for quality gates
+    ├── RESEARCH_MANIFEST.md      # Protocol for Deep Research triggers
+    ├── .agent/
+    │   ├── spec/
+    │   │   ├── requirement.md    # User's raw intent & goal mapping
+    │   │   └── design.md         # The "Architect" layer's technical design
+    │   └── tasks.md              # Recursive parent-child task tracking
+    └── scripts/
     └── init_framework.sh     # One-click environment setup
+
+
