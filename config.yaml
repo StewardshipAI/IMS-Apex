@@ -1,0 +1,47 @@
+# IMS-Apex Configuration
+# Version: 0.1.1
+
+project:
+  name: "IMS-Core"
+  repo_path: "../ims-core"
+  version: "0.1.0"
+  
+output:
+  specs_dir: "../ims-core/docs/ims"
+  tasks_dir: ".agent/tasks"
+  logs_dir: ".agent/logs"
+  
+workflow:
+  mode: "INTERACTIVE"  # INTERACTIVE | YOLO
+  audit_required: true
+  research_enabled: true
+  auto_commit: false  # Set true for full automation
+  
+integration:
+  core_docs: "./docs/core-specs"  # Symlink to Core
+  sync_on_complete: true
+  backup_enabled: true
+  
+quality:
+  min_test_coverage: 80  # percentage
+  security_scan: true
+  lint_check: true
+  type_check: true
+  
+ai_models:
+  architect: "gemini-3-pro-preview"
+  researcher: "gemini-2.0-flash-exp"
+  auditor: "claude-sonnet-4-5"
+  
+research:
+  max_searches: 5
+  sources:
+    - "arxiv.org"
+    - "github.com"
+    - "docs.python.org"
+  cache_results: true
+  
+performance:
+  max_spec_size_kb: 500
+  timeout_seconds: 300
+  retry_attempts: 3
